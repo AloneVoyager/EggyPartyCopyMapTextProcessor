@@ -57,7 +57,7 @@ namespace EggyPartyCopyMapTextProcessor
 
                 // 写入文件（程序目录下，文件名包含地图名以防重复）
                 string safeMapName = string.Join("_", mapName.Split(Path.GetInvalidFileNameChars()));
-                string fileName = $"EggPartyMap_{safeMapName}.txt";
+                string fileName = $"EggyPartyMap_{safeMapName}.txt";
                 string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, fileName);
 
                 File.WriteAllText(filePath, outputContent, System.Text.Encoding.UTF8);
